@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <style name="MyAppComapatTheme" parent="MyAppComapatTheme.Base">
+    </style>
+    <style name="MyAppComapatTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryDark">@color/PrimaryDark</item>
+        <item name="colorAccent">@color/Accent</item>
+        <item name="android:dialogTheme">@style/MyAppComapatTheme</item>
+    </style>
+    <style name="MyAppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:listDivider">@color/DividerColor</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+</resources>

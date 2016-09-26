@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
+using MathiasDesign.Features.SnackBar;
 
 namespace MathiasDesign
 {
@@ -12,7 +14,11 @@ namespace MathiasDesign
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            // SetContentView (Resource.Layout.Main);
+            SetContentView(Resource.Layout.Main);
+
+            // Start the given activity and call Finish() to remove the splash screen from the navigation stack
+            StartActivity(new Intent(this, typeof(SnackbarExamples)));
+            Finish();
         }
     }
 }
