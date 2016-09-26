@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\SimpleOnClickListener.cs" />
+    <Compile Include="Common\SimpleSnackbarCallBack.cs" />
     <Compile Include="Features\Base\ViewBase.cs" />
     <Compile Include="Features\SnackBar\SnackbarExamples.cs" />
     <Compile Include="MainActivity.cs" />

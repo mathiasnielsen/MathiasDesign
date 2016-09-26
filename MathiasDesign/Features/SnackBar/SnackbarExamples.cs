@@ -13,6 +13,7 @@ using MathiasDesign.Features.Base;
 using Android.Support.Design.Widget;
 using MathiasDesign.Common;
 using Android.Graphics;
+using MathiasDesign.Core.Features.Snackbar;
 
 namespace MathiasDesign.Features.SnackBar
 {
@@ -32,13 +33,21 @@ namespace MathiasDesign.Features.SnackBar
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
+            var btnManagerSnackBar = FindViewById<Button>(Resource.Id.btnManagerSnackbar);
             var btnSimpleSnackBar = FindViewById<Button>(Resource.Id.btnSimpleSnackbar);
             var btnActionCallback = FindViewById<Button>(Resource.Id.btnActionCallback);
             var btnCustomView = FindViewById<Button>(Resource.Id.btnCustomSnackbar);
 
+            btnManagerSnackBar.Click += OnManagerButtonClicked;
             btnSimpleSnackBar.Click += OnSimpleButtonClicked;
             btnActionCallback.Click += OnActionCallbackClicked;
             btnCustomView.Click += OnCustomViewClicked;
+        }
+
+        private async void OnManagerButtonClicked(object sender, EventArgs e)
+        {
+            var viewmodel = new SnackBarViewModel(new MathiasDesign.Managers.NotificationManager(this));
+            var result = await viewmodel.ShowMessageFromManagerAsync();
         }
 
         private void OnSimpleButtonClicked(object sender, EventArgs e)

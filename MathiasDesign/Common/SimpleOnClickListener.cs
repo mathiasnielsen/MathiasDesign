@@ -17,12 +17,12 @@ namespace MathiasDesign.Common
     {
         private Snackbar snackbar;
 
-        public event EventHandler Clicked;
-
         public SimpleOnClickListener(Snackbar snackbar)
         {
             this.snackbar = snackbar;
         }
+
+        public event EventHandler Clicked;
 
         public void OnClick(View view)
         {

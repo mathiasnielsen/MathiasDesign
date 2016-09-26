@@ -26,10 +26,16 @@
         android:paddingRight="20dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <Button
-            android:id="@+id/btnSimpleSnackbar"
+            android:id="@+id/btnManagerSnackbar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:text="Manager Snackbar" />
+        <Button
+            android:id="@+id/btnSimpleSnackbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Simple Snackbar" />
         <Button
             android:id="@+id/btnActionCallback"

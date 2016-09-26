@@ -8,6 +8,8 @@ namespace MathiasDesign.Core.Managers
 {
     public interface INotificationManager
     {
-        void MakeNotification();
+        void MakeNotification(string text);
+
+        Task<bool> MakeNotificationAsync(string text);
     }
 }
