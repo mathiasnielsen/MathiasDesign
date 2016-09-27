@@ -14,6 +14,8 @@ using Android.Support.Design.Widget;
 using MathiasDesign.Common;
 using Android.Graphics;
 using MathiasDesign.Core.Features.Snackbar;
+using Android.Support.V4.Widget;
+using Android.Support.V4.App;
 
 namespace MathiasDesign.Features.SnackBar
 {
@@ -30,8 +32,24 @@ namespace MathiasDesign.Features.SnackBar
 
             coordinatorLayout = FindViewById<CoordinatorLayout>(Resource.Id.coordinatorLayout);
             var fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
+
+            // Set the drawer toggle as the DrawerListener 
+            var drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawerlayout);
+            var drawerToggle = new Android.Support.V7.App.ActionBarDrawerToggle(
+                this,
+                drawerLayout,
+                toolbar,
+                Resource.String.DrawerOpen,
+                Resource.String.DrawerClosed);
+
+            drawerLayout.AddDrawerListener(drawerToggle);
+
+            SupportActionBar.SetHomeButtonEnabled(true);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetDisplayShowHomeEnabled(true);
 
             var btnManagerSnackBar = FindViewById<Button>(Resource.Id.btnManagerSnackbar);
             var btnSimpleSnackBar = FindViewById<Button>(Resource.Id.btnSimpleSnackbar);
