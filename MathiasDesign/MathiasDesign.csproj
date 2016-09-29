@@ -77,10 +77,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App.cs" />
     <Compile Include="Common\SimpleOnClickListener.cs" />
     <Compile Include="Common\SimpleSnackbarCallBack.cs" />
     <Compile Include="Features\Base\ViewBase.cs" />
+    <Compile Include="Features\Common\DrawerMenuView.cs" />
+    <Compile Include="Features\Home\HomeView.cs" />
+    <Compile Include="Features\Images\SVGImageView.cs" />
+    <Compile Include="Features\Layouts\CoordinatorLayoutView.cs" />
     <Compile Include="Features\SnackBar\SnackbarExamples.cs" />
+    <Compile Include="Frame.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Managers\NotificationManager.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -94,6 +100,15 @@
     <AndroidResource Include="Resources\layout\ActivitySnackbarExamples.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityHome.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ControlDrawerMenu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityCoordinatorLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -101,7 +116,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
@@ -120,6 +137,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\color.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\dimen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

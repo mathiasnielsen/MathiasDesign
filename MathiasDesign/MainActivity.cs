@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 using MathiasDesign.Features.SnackBar;
+using MathiasDesign.Features.Home;
 
 namespace MathiasDesign
 {
@@ -17,7 +18,7 @@ namespace MathiasDesign
             SetContentView(Resource.Layout.Main);
 
             // Start the given activity and call Finish() to remove the splash screen from the navigation stack
-            StartActivity(new Intent(this, typeof(SnackbarExamples)));
+            StartActivity(new Intent(this, typeof(HomeView)));
             Finish();
         }
     }

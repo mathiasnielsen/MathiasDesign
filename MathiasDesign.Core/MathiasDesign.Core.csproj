@@ -37,6 +37,9 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Base\ViewModelBase.cs" />
+    <Compile Include="Features\Home\HomeViewModel.cs" />
+    <Compile Include="Features\Images\SVGImageViewModel.cs" />
     <Compile Include="Features\Snackbar\SnackBarViewModel.cs" />
     <Compile Include="Managers\INotificationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

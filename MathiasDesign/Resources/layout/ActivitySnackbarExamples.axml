@@ -62,9 +62,6 @@
             android:layout_margin="16dp"
             android:src="@android:drawable/ic_dialog_email" />
     </android.support.design.widget.CoordinatorLayout>
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_width="200dp"
-        android:background="@color/White"
-        android:layout_gravity="start"/>
+    <MathiasDesign.Features.Common.DrawerMenuView
+        style="@style/MenuStyle" />
 </android.support.v4.widget.DrawerLayout>

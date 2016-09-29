@@ -19,6 +19,9 @@ namespace MathiasDesign.Features.Base
 
         protected override void OnCreate(Bundle bundle)
         {
+            var app = ApplicationContext as App;
+            app.Frame.CurrentActivity = this;
+
             base.OnCreate(bundle);
 
             SetContentView(ResourceLayoutId);
