@@ -25,6 +25,16 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="SVG images" />
+            <Button
+                android:id="@+id/DrawerButtonImageViewScaleTypes"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Image view scale types" />
+            <Button
+                android:id="@+id/DrawerButtonImageViewViewPagers"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="ViewPagers" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -9,5 +9,6 @@ namespace MathiasDesign.Core.Features.Images
 {
     public class SVGImageViewModel : ViewModelBase
     {
+        
     }
 }

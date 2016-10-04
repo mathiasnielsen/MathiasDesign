@@ -12,6 +12,8 @@ using Android.Widget;
 using Android.Util;
 using MathiasDesign.Features.SnackBar;
 using MathiasDesign.Features.Images;
+using MathiasDesign.Features.Layouts;
+using MathiasDesign.Features.ViewPagers;
 
 namespace MathiasDesign.Features.Common
 {
@@ -39,13 +41,19 @@ namespace MathiasDesign.Features.Common
             frame = app.Frame;
 
             var snackbarButton = FindViewById<Button>(Resource.Id.DrawerButtonSnackbar);
-            snackbarButton.Click += (s, e) => { frame.NavigateToPage<SnackbarExamples>(); };
+            snackbarButton.Click += (s, e) => { frame.NavigateToPage<SnackbarExamplesView>(); };
 
             var coordinatorLayoutButton = FindViewById<Button>(Resource.Id.DrawerButtonCoordinatorLayout);
-            snackbarButton.Click += (s, e) => { frame.NavigateToPage<>(); };
+            coordinatorLayoutButton.Click += (s, e) => { frame.NavigateToPage<CoordinatorLayoutView>(); };
 
             var svgButton = FindViewById<Button>(Resource.Id.DrawerButtonSVG);
             svgButton.Click += (s, e) => { frame.NavigateToPage<SVGImageView>(); };
+
+            var imageViewScaleTypeButton = FindViewById<Button>(Resource.Id.DrawerButtonImageViewScaleTypes);
+            imageViewScaleTypeButton.Click += (s, e) => { frame.NavigateToPage<ImageViewScaleTypesView>(); };
+
+            var viewPagerButton = FindViewById<Button>(Resource.Id.DrawerButtonImageViewViewPagers);
+            viewPagerButton.Click += (s, e) => { frame.NavigateToPage<ViewPagerWithIndicatorView>(); };
         }
 
         private void InitializeView(Context context)

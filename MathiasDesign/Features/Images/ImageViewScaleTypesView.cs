@@ -11,11 +11,11 @@ using Android.Views;
 using Android.Widget;
 using MathiasDesign.Features.Base;
 
-namespace MathiasDesign.Features.Layouts
+namespace MathiasDesign.Features.Images
 {
-    [Activity(Label = "CoordinatorLayout")]
-    public class CoordinatorLayoutView : ViewBase
+    [Activity(Label = "Scale types")]
+    public class ImageViewScaleTypesView : ViewBase
     {
-        protected override int ResourceLayoutId => Resource.Layout.ActivityCoordinatorLayout;
+        protected override int ResourceLayoutId => Resource.Layout.ActivityImageViewScaleTypes;
     }
 }

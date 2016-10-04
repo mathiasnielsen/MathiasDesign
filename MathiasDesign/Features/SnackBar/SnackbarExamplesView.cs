@@ -20,7 +20,7 @@ using Android.Support.V4.App;
 namespace MathiasDesign.Features.SnackBar
 {
     [Activity(Label = "Snackbar")]
-    public class SnackbarExamples : ViewBase
+    public class SnackbarExamplesView : ViewBase
     {
         private CoordinatorLayout coordinatorLayout;
 

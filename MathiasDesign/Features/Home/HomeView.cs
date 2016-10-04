@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Support.V7.App;
 using MathiasDesign.Features.Base;
 using Android.Support.V4.Widget;
+using MathiasDesign.Core.Features.Home;
 
 namespace MathiasDesign.Features.Home
 {
@@ -24,6 +25,8 @@ namespace MathiasDesign.Features.Home
 
         protected override void OnCreate(Bundle bundle)
         {
+            var viewModel = new HomeViewModel();
+
             base.OnCreate(bundle);
 
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
