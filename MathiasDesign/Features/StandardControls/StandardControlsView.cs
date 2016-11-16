@@ -11,11 +11,11 @@ using Android.Views;
 using Android.Widget;
 using MathiasDesign.Features.Base;
 
-namespace MathiasDesign.Features.Images
+namespace MathiasDesign.Features.StandardControls
 {
-    [Activity(Label = "SVG Images")]
-    public class SVGImageView : ViewBase
+    [Activity (Label = "Standard controls")]
+    public class StandardControlsView : ViewBase
     {
-        protected override int ResourceLayoutId => Resource.Layout.ActivitySVGImage;
+        protected override int ResourceLayoutId => Resource.Layout.ActivityStandardControls;
     }
 }

@@ -11,11 +11,10 @@ using Android.Views;
 using Android.Widget;
 using MathiasDesign.Features.Base;
 
-namespace MathiasDesign.Features.Images
+namespace MathiasDesign.Features.Images.Fragments
 {
-    [Activity(Label = "SVG Images")]
-    public class SVGImageView : ViewBase
+    public class ImageFragment : FragmentBase
     {
-        protected override int ResourceLayoutId => Resource.Layout.ActivitySVGImage;
+        protected override int ResourceLayoutId => Resource.Layout.FragmentImage;
     }
 }

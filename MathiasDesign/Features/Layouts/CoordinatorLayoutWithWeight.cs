@@ -13,14 +13,15 @@ using MathiasDesign.Features.Base;
 
 namespace MathiasDesign.Features.Layouts
 {
-    [Activity(Label = "CoordinatorLayout")]
-    public class CoordinatorLayoutView : ViewBase
+    [Activity(Label = "CoordinatorLayout with weight")]
+    public class CoordinatorLayoutWithWeight : ViewBase
     {
-        protected override int ResourceLayoutId => Resource.Layout.ActivityCoordinatorLayout;
-
-        protected override void OnInitializeUIElements()
+        protected override int ResourceLayoutId
         {
-            base.OnInitializeUIElements();
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

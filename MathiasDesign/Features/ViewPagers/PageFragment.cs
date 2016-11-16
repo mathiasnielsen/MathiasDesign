@@ -10,10 +10,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Graphics;
+using MathiasDesign.Features.Base;
 
 namespace MathiasDesign.Features.ViewPagers
 {
-    public class PageFragment : Android.Support.V4.App.Fragment
+    public class PageFragment : FragmentBase
     {
         private Color backgroundColor;
 
@@ -21,6 +22,8 @@ namespace MathiasDesign.Features.ViewPagers
         {
             backgroundColor = color;
         }
+
+        protected override int ResourceLayoutId => Resource.Layout.FragmentColorPage;
 
         public override void OnCreate(Bundle savedInstanceState)
         {

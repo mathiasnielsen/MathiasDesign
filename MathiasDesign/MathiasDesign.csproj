@@ -82,13 +82,17 @@
     <Compile Include="Common\SimpleSnackbarCallBack.cs" />
     <Compile Include="Controls\Adapters\TabFragmentPagerAdapter.cs" />
     <Compile Include="Controls\ViewPagers\ViewPagerWithIndicator.cs" />
+    <Compile Include="Features\Base\FragmentBase.cs" />
     <Compile Include="Features\Base\ViewBase.cs" />
     <Compile Include="Features\Common\DrawerMenuView.cs" />
     <Compile Include="Features\Home\HomeView.cs" />
+    <Compile Include="Features\Images\Fragments\ImageFragment.cs" />
     <Compile Include="Features\Images\ImageViewScaleTypesView.cs" />
     <Compile Include="Features\Images\SVGImageView.cs" />
     <Compile Include="Features\Layouts\CoordinatorLayoutView.cs" />
+    <Compile Include="Features\Layouts\CoordinatorLayoutWithWeight.cs" />
     <Compile Include="Features\SnackBar\SnackbarExamplesView.cs" />
+    <Compile Include="Features\StandardControls\StandardControlsView.cs" />
     <Compile Include="Features\ViewPagers\PageFragment.cs" />
     <Compile Include="Features\ViewPagers\ViewPagerWithIndicatorView.cs" />
     <Compile Include="Frame.cs" />
@@ -96,6 +100,7 @@
     <Compile Include="Managers\NotificationManager.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transforms\CircleTransformFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -118,6 +123,18 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ActivityViewPagerWithIndicator.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivitySVGImage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FragmentColorPage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FragmentImage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityStandardControls.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -155,7 +172,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\dimen.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\doctor_red.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

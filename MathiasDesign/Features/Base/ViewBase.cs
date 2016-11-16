@@ -25,6 +25,17 @@ namespace MathiasDesign.Features.Base
             base.OnCreate(bundle);
 
             SetContentView(ResourceLayoutId);
+
+            InitilizeUIElements();
+        }
+
+        private void InitilizeUIElements()
+        {
+            OnInitializeUIElements();
+        }
+
+        protected virtual void OnInitializeUIElements()
+        {
         }
     }
 }

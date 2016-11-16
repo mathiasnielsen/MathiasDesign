@@ -17,5 +17,12 @@ namespace MathiasDesign.Features.Images
     public class ImageViewScaleTypesView : ViewBase
     {
         protected override int ResourceLayoutId => Resource.Layout.ActivityImageViewScaleTypes;
+
+        protected override void OnInitializeUIElements()
+        {
+            base.OnInitializeUIElements();
+
+
+        }
     }
 }
